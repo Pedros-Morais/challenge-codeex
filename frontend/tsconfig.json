@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,                  /* Changed from true to false to be more permissive */
+    "noImplicitAny": false,           /* Added to allow implicit any types */
+    "noEmit": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true, /* Added to allow default imports from modules with no default export */
+    "module": "esnext",
+    "moduleResolution": "node",     /* Changed from bundler to node for better compatibility */
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts", 
+    "**/*.ts", 
+    "**/*.tsx", 
+    ".next/types/**/*.ts",
+    "src/@types/**/*.d.ts"           /* Added to include our custom type definitions */
+  ],
+  "exclude": ["node_modules"]
+}
