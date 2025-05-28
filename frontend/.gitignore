@@ -7,7 +7,9 @@
 .yarn/unplugged/@next-swc*
 .next/cache
 .swc/
-
+.yarn
+.next
+yarn.lock
 # testing
 /coverage
 

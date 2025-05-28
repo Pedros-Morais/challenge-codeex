@@ -77,7 +77,7 @@ function DataTable({
           ))}
           {onAdd && (
             <Button type="primary" icon={<PlusOutlined />} onClick={onAdd}>
-              Add New
+            Adicionar Nova Manutenção
             </Button>
           )}
         </Space>
